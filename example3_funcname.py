@@ -4,7 +4,11 @@ import sys
 from models.CostingsModel import CostingsModel
 from models.ExpensesModel import ExpensesModel
 
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logging.basicConfig(
+    stream=sys.stdout,
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s",
+)
 
 logger = logging.getLogger()
 

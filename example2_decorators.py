@@ -1,6 +1,7 @@
 import logging
 import sys
-from models import CostingsModelWithDecorator, ExpensesModelWithDecorator
+from models.CostingsModelWithDecorator import CostingsModelWithDecorator
+from models.ExpensesModelWithDecorator import ExpensesModelWithDecorator
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
